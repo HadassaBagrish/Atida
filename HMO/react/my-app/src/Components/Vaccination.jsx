@@ -10,9 +10,9 @@ export default function Vaccination() {
     const navigate = useNavigate();
     const dispatch = useDispatch(); 
     const listVaccines = useSelector((state) => state.vaccines.listVaccines);
-    // useEffect(() => {
-    //     dispatch({ type: 'GET_VACCINES'});
-    // }, [dispatch]); 
+     useEffect(() => {
+         dispatch({ type: 'GET_VACCINES'});
+     }, [dispatch]); 
     const listPatients = useSelector((state) => state.patients.listPatients);
 
     
