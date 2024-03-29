@@ -45,7 +45,7 @@ def add_vaccine():
 
 @app.route('/vaccines/get_all', methods=['PUT','GET'])
 def get_vaccinations():
-    return pt.get_vaccinations()
+    return vc.get_vaccinations()
 
 @app.route('/patients/get_positive_of_month', methods=['GET'])
 def get_positive_of_month():
